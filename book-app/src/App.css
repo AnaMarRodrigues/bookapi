@@ -1,0 +1,559 @@
+html{
+  font-size: 75%;
+  font-family: 'Kalnia', serif;
+  background: #DAE2F8;  
+  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+}
+
+body{
+  background: #DAE2F8;  
+  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ 
+}
+.header{
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  position: relative;
+  display: grid;
+  
+}
+.header #logo{
+  position: absolute;
+  width: 200px;
+}
+
+.row1{
+  color: rgb(253, 247, 255);
+  font-size: 30px;
+  padding-left: 10%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.row1 h1{
+  position:absolute;
+}
+.row1 img{
+  padding-top: 5%;
+  width: 550px;
+  margin-left: auto; 
+  margin-right: 100px;
+  
+}
+
+.row2 h2{
+  color:rgb(253, 247, 255);
+  font-size: 30px;
+  opacity: 75%;
+  position: relative;
+
+}
+
+.row2{
+  position: absolute;
+  top:110%; 
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateY(-50%);
+  padding-left: 10%;
+  
+}
+
+.search button{
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #dde6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.search{
+  position: relative;
+  background:#e5ebfc;
+  height: 40px;
+  border-radius: 40px;
+  padding: 15px;
+  margin-top: auto; 
+  width:380px;
+
+}
+
+.search Input {
+  font-family: 'Gill Sans', sans-serif;
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 1px;
+  color: black;
+  font-size: 16px;
+  line-height: 40px;
+  width: 240px;
+  margin-left: 10px;
+}
+
+
+/* list of the  Categories -  **/
+
+.categories {
+  /* From https://css.glass  glass effect */
+
+background: rgba(255, 255, 255, 0.16);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.61);
+margin-left: 30px;
+color:rgb(247, 236, 251);
+z-index: -5;
+margin-top: 230px;
+
+}
+
+.categories h1 {
+  text-align: center;
+}
+
+.categories ul{
+
+  color:rgb(247, 236, 251);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+  margin-bottom: 15px;
+ 
+}
+
+.categories li{
+  margin:30px;
+  text-align: left;
+}
+
+.categories a{
+  text-decoration: none;
+  color:rgb(247, 236, 251);
+  padding: 12px;
+}
+
+.categories a:hover {
+  background-color: #ccc;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius:20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.61);
+}
+
+.categories a.active {
+  color: white;
+}
+
+.booklist {
+  width: 17%;
+  float: left;
+  
+}
+
+.filter {
+background: rgba(255, 255, 255, 0.16);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.61);
+margin-left: 30px;
+color:rgb(247, 236, 251);
+position: absolute;
+width: 15%;
+float: left;
+
+}
+
+.filter h1 {
+  text-align: center;
+}
+
+.filter ul{
+
+  color:rgb(247, 236, 251);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+  margin-bottom: 15px;
+ 
+}
+
+.filter li{
+  margin:20px;
+  text-align: left;
+  margin-left:30px;
+}
+
+.filter  a{
+  text-decoration: none;
+  color:rgb(247, 236, 251);
+  
+}
+
+.filter button{
+  outline: none;
+  background-color: #ccc;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius:20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.766);
+  color:rgb(255, 254, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+  margin-bottom: 6px;
+  width: 100px;
+  padding: 0.5rem 0rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.filter button:hover{
+  outline: none;
+  background-color: #c9e7ff;
+  background: rgba(167, 214, 249, 0.729);
+  border-radius:20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.61);
+  color:#DAE2F8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+  margin-bottom: 6px;
+  width: 100px;
+  padding: 0.5rem 0rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.all{
+  width: 100%;
+}
+
+/**bookdisplay css , where the books are displayed and show */
+
+.container{
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 25%;
+  margin-left: 370px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+  grid-gap:20px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;  color: rgb(47, 47, 47);
+}
+
+.card{
+background: rgba(255, 255, 255, 0.16);
+border-radius: 1rem;
+padding: 0.9rem;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.61);
+text-align: center;
+position: relative;
+}
+
+.card img{
+  width: 100%; 
+  border-radius: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.card bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.554);
+}
+
+/**Bookdetails page style - tudo dessa pagina esta aqui de seguida */
+
+.details-div{
+  min-height: 100vh;
+  width:100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0%;
+  background-color: #dae2f81c;
+  opacity: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-inner{
+  width: 700px;
+  height: 650px;
+  background: rgba(255, 255, 255, 0.526);
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.053);
+  border: 1px solid rgba(255, 255, 255, 0.61);
+  color:rgb(97, 97, 97);
+  padding:1.5rem;
+  position: relative;
+  box-sizing: border-box;
+  opacity: 1;
+  font: size 1.2rem; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.details-inner .close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  outline: none;
+  border:none;
+  background-color: transparent;
+
+}
+
+.details-inner .inner-box{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    margin-right: 60px;
+}
+
+.details-inner .inner-box img{
+    margin-right: 20px;
+    max-width: 350px;
+    width:200px;
+}
+
+.details-inner .inner-box h1{
+  margin-top:10px;
+  font-family: 'Kalnia', serif;
+  font-size: 2.5rem;
+}
+.details-inner .inner-box h3{
+  margin-top:10px;
+  color: #85a4f3;
+}
+
+.details-inner .inner-box button{
+  outline: none;
+  background-color: #8aabfc;
+  color: aliceblue;
+  border-radius:20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.61);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  width: 80px;
+  padding: 0.6rem 0.5rem; 
+}
+
+.description {
+  margin-top: 2rem;
+  text-align: justify;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+/**size for phone */
+
+  @media screen and (max-width: 767px) {
+
+
+    .header{
+      width: 100%;
+    }
+
+  
+
+    .row1 {
+      padding-left:0%;
+  display: flex;
+  align-items: center;
+  position: relative;
+    }
+    .header #logo{
+      width: auto;
+      position: absolute;
+    }
+   
+   
+    .row1 h1{
+      font-size: 30px;
+      margin-top: 50%;
+      position:absolute;
+      text-align: center;
+      background-color: #85baf365;
+    }
+
+
+
+    .row1 img{
+      padding-top: -15%;
+      width: 250px; 
+      display: block; 
+      margin-top: 40%;
+
+    }
+
+    .container {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+  
+    .booklist {
+      margin-top: 80px;
+      width: 100%; 
+      float: none; /* Remove the float property */
+    }
+  
+    .row2 {
+      position: relative; 
+      top: 0; 
+      left: 0; 
+      padding-left: 0; 
+      margin-top: 20%; 
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .row2 h2{
+      font-size: 22px;
+      opacity: 100%;
+
+    }
+  
+    .search{
+      height: 30px;
+      border-radius: 40px;
+      padding: 15px;
+      margin-top: auto; 
+      width:280px;
+      margin-left: auto;
+      margin-right: auto;
+    
+    }
+  
+    .search Input {
+     
+      font-size: 14px;
+      line-height: 30px;
+      width: 180px;
+    }
+  
+    .search button{
+      width: 30px;
+      height: 30px;
+    
+    }
+  
+
+
+  .container {
+      margin-top: 70%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(140px,0.5fr));
+      grid-gap:15px;
+      grid-row-gap: 45px;
+      box-sizing: border-box;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: rgb(47, 47, 47);
+  }
+
+
+  .categories{
+    display: none;
+  }
+
+  .filter h1{
+    font-size: 18px;
+    color: #121212;
+  }
+  .filter button{
+    font-size: 12px;
+    list-style-type: none;
+    margin-bottom: 6px;
+    width: 80px;
+    padding: 0.5rem 0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin-left: 30%;
+  }
+  
+  .filter button:hover{
+   
+    font-size: 12px;
+    list-style-type: none;
+    margin-bottom: 6px;
+    width: 80px;
+    padding: 0.5rem 0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 30%;
+  }
+
+  .filter {
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    margin-left: 0px;
+    color:rgb(247, 236, 251);
+    position: absolute;
+    width: 100%;
+    float: center;
+    margin-top: -40%;
+    
+    }
+    
+    .filter h1 {
+      text-align: center;
+    }
+    
+    .filter ul{
+    
+      color:rgb(247, 236, 251);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: px;
+      list-style-type: none;
+      margin-bottom: 5px;
+      margin-left: auto;
+      margin-right: auto;
+     
+    }
+    
+    .filter li{
+      margin:0ch;
+      text-align: left;
+      margin-left:0px;
+      
+    }
+
+  }
+
+
+
+
